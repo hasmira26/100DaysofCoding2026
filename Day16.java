@@ -1,12 +1,17 @@
-public class Day16 {
+import java.util.Scanner;
+
+public class contoh {
     public static void main(String[] args) {
-        int a = 17;
-        int b = 5;
-        
-        int hasilBagi = a / b;
-        int sisaBagi = a % b;
-        
-        System.out.println("Hasil bagi: " + hasilBagi);
-        System.out.println("Sisa bagi: " + sisaBagi);
+        Scanner c = new Scanner(System.in);
+        System.out.print("Masukkan nilai a\t:");
+        int a = c.nextInt();
+        System.out.print("Masukkan nilai b\t:");
+        int b = c.nextInt();
+
+        int hasilBagi = a/b;
+        int sisaBagi = a%b;
+
+        System.out.println("Hasil bagi\t\t:" + hasilBagi);
+        System.out.println("Sisa bagib\t\t:" + sisaBagi);
     }
 }
