@@ -1,34 +1,41 @@
-/**
- * Program menukar dua nilai variabel
- */
 import java.util.Scanner;
 
-public class Day21 {
+/**
+ * Mengubah String menjadi tipe data primitif
+ */
+public class day22{
     public static void main(String[] args) {
-      
-        Scanner r = new Scanner(System.in);
 
-        System.out.print("Masukkan nilai a: ");
-        int a = r.nextInt();
+        Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukkan nilai b: ");
-        int b = r.nextInt();
+        System.out.print("Masukkan bilangan bulat: ");
+        String strInt = input.nextLine();
 
-        System.out.println("\nSebelum ditukar:");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.print("Masukkan bilangan desimal: ");
+        String strDouble = input.nextLine();
 
-        // Proses menukar nilai
-        int temp = a;
-        a = b;
-        b = temp;
+        System.out.print("Masukkan nilai true/false: ");
+        String strBoolean = input.nextLine();
 
-        System.out.println("\nSetelah ditukar:");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        // Mengubah String menjadi tipe data int
+        int angka = Integer.parseInt(strInt);
 
-        r.close();
-    
+        // Mengubah String menjadi tipe data double
+        double desimal = Double.parseDouble(strDouble);
 
+        // Mengubah String menjadi tipe data boolean
+        boolean status = Boolean.parseBoolean(strBoolean);
+
+        System.out.println("\n=== Hasil Konversi ===");
+        System.out.println("String int     : " + strInt);
+        System.out.println("Menjadi int    : " + angka);
+
+        System.out.println("String double  : " + strDouble);
+        System.out.println("Menjadi double : " + desimal);
+
+        System.out.println("String boolean : " + strBoolean);
+        System.out.println("Menjadi boolean: " + status);
+
+        input.close();
     }
 }
