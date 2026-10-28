@@ -13,9 +13,15 @@ public class Day57 {
 
         for (int i = 1; i <= N;i++){
             if (i % 2 != 0) {
-                System.out.println(i + " ");
+                System.out.print(i + " ");
             }
         }
+        System.out.println("\n\nAngka genap dari 1 sampai " + N + ":");
 
+        for (int i = 1; i <= N; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
     }
 }
